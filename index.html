@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moth pupa | Bootstrap Главная</title>
+    <!-- Подключение Bootstrap 5 через CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключение нашего кастомного файла -->
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MOTH PUPA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Баннер (Hero) -->
+    <div class="container text-center my-5 py-5 bg-white rounded shadow-sm">
+        <h1 class="display-4 fw-bold">Новая коллекция уже здесь</h1>
+        <p class="lead text-muted">Открой для себя минималистичный дизайн и комфорт в каждой детали.</p>
+        <a href="catalog.html" class="btn btn-primary btn-lg mt-3">Перейти в каталог</a>
+    </div>
+
+    <!-- Преимущества (Используем сетку Bootstrap row/col) -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Почему выбирают нас</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-accent">Качество</h5>
+                        <p class="card-text">Только проверенные ткани и надежные швы.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-accent">Доставка</h5>
+                        <p class="card-text">Быстрая доставка по всей стране.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-accent">Стиль</h5>
+                        <p class="card-text">Уникальный крой, который подчеркнет вашу индивидуальность.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Хиты продаж (Карточки товаров) -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Хиты продаж</h2>
+        <div class="row">
+            <!-- Карточка 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="long.jpg" class="card-img-top" alt="Лонгслив" style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Белый лонгслив</h5>
+                        <p class="card-text text-accent">7000 руб.</p>
+                        <a href="product.html" class="btn btn-outline-dark">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="hoodie.jpg" class="card-img-top" alt="Худи" style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Оверсайз худи</h5>
+                        <p class="card-text text-accent">13000 руб.</p>
+                        <a href="product.html" class="btn btn-outline-dark">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="pants.jpg" class="card-img-top" alt="Штаны" style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Спортивные штаны</h5>
+                        <p class="card-text text-accent">8000 руб.</p>
+                        <a href="product.html" class="btn btn-outline-dark">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Moth pupa. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Подключение JS Bootstrap (для работы мобильного меню-бургера) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
