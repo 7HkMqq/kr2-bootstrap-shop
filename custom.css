@@ -1,0 +1,42 @@
+/* Файл кастомизации Bootstrap для Moth pupa */
+:root {
+    --main-color: #d4a373; /* Акцентный цвет (наш бежевый) */
+    --dark-color: #1a1a1a; /* Темный цвет */
+    --bg-color: #fefae0;   /* Светлый фон */
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Переопределяем стандартные кнопки Bootstrap */
+.btn-primary {
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+/* Кастомный цвет для текста цен */
+.text-accent {
+    color: var(--main-color) !important;
+    font-weight: bold;
+}
+
+/* Темная шапка */
+.navbar-custom {
+    background-color: var(--dark-color) !important;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--main-color) !important;
+}
